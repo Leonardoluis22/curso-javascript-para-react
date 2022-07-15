@@ -1,10 +1,14 @@
 //jsx
 import './style.css'; //importanto o arquivo css desse componente
 
-function CardGame() {
-  return `
-      <article class='card-game'>
-          <img src="images/alura-pixel.png"/>
+function CardGame(
+  icon = './images/alura-pixel.png',
+  alt = 'Logo-Alura',
+  classCard = 'card-game'
+) {
+  return /*html*/ `
+      <article class='${classCard}' alt='${alt}'>
+          <img src='${icon}'/>
       </article>
     `;
 }
