@@ -13,11 +13,10 @@ $root.insertAdjacentHTML(
   'afterend',
   `
   ${ScoreBoard}
-  ${BoardGame(2)}
+  ${BoardGame(6)}
   
 `
 );
-
 
 /*função que adicona o evento de troca nos cards
 let cards = document.querySelectorAll('.card-game');
@@ -29,4 +28,3 @@ cards.forEach((element) => {
   });
 });
 */
-
