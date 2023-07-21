@@ -3,7 +3,14 @@ import "./src/styles/generic/generic.css";
 import "./src/styles/elements/base.css";
 
 import CardGame from "./src/components/CardGame";
-const $root = document.querySelector("#root");
-const $htmlCardGame = CardGame(6);
+import PlayerScore from "./src/components/PlayerScore";
+import BoardGame from "./src/components/BoardGame/index.js";
 
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
+const $root = document.querySelector("#root");
+
+const $htmlCardGame = CardGame(1);
+const $htmlPlayerScore = PlayerScore();
+const $htmlBoardGame = BoardGame();
+
+//$root.insertAdjacentHTML("beforeend", $htmlCardGame);
+$root.insertAdjacentHTML("beforeend", $htmlBoardGame);

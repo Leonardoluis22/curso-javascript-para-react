@@ -1,7 +1,8 @@
 import "./style.css";
 
 function CardGame(qtd) {
-    let cardgames;
+    let cardgames = ``;
+
     for (let i = 1; i <= qtd; i++) {
         cardgames += `
         <article class="card-game">

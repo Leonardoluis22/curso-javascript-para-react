@@ -1,0 +1,8 @@
+.board-game {
+    width: 320px;
+    height: 608px;
+    background-color: var(--pomb-and-power);
+    margin: 15px auto;
+    border: solid 4px var(--floral-white);
+    display: flex;
+}
